@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!container || container.dataset.loaded === 'true') return;
     const iframe = document.createElement('iframe');
     iframe.src = 'https://www.google.com/maps?q=Hernando+de+Soto,+3,+06006+Badajoz,+España&output=embed';
-    iframe.title = 'Ubicación de Talleres TUNDI en Hernando de Soto 3, Badajoz';
+    iframe.title = 'Ubicación de Talleres TUNDI en C/ Hernando de Soto 3, Badajoz';
     iframe.loading = 'lazy';
     iframe.referrerPolicy = 'no-referrer-when-downgrade';
     container.innerHTML = '';
@@ -84,14 +84,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (response.ok && (data.success || response.status === 200)) {
           statusBox.className = 'form-status success';
-          statusBox.innerHTML = '<i class="fa-solid fa-circle-check"></i> <strong>¡Solicitud enviada!</strong> Nos pondremos en contacto contigo lo antes posible. Si es urgente, llámanos directo al <strong>924 27 78 47</strong>.';
+          statusBox.innerHTML = '<i class="fa-solid fa-circle-check"></i> <strong>¡Solicitud enviada!</strong> Nos pondremos en contacto contigo lo antes posible. Si es urgente, llámanos o escríbenos por WhatsApp al <strong>626 18 30 35</strong>.';
           form.reset();
         } else {
           throw new Error(data.message || 'Error al procesar el envío.');
         }
       } catch (error) {
         statusBox.className = 'form-status error';
-        statusBox.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> No se pudo enviar automáticamente (verifica que hayas configurado tu clave de correo). Por favor, llámanos directamente al <strong>924 27 78 47</strong>.';
+        statusBox.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> No se pudo enviar automáticamente (verifica que hayas configurado tu clave de Web3Forms). Puedes escribirnos directamente a <strong>tallerestundi@gmail.com</strong> o llamar al <strong>626 18 30 35</strong>.';
       } finally {
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalBtnHTML;
