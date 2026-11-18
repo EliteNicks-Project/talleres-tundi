@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios de Taller Mecánico y Precios Orientativos | TUNDI Badajoz</title>
+  <meta name="description" content="Consulta los servicios habituales de mecánica en Badajoz: motor, frenos, neumáticos, diagnosis, Pre-ITV y horquilla de precios orientativos. Llama al 924 27 78 47.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Barra Superior -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-info">
+        <span><i class="fa-solid fa-location-dot"></i> Hernando de Soto, 3 · 06006 Badajoz</span>
+        <a href="tel:+34924277847"><i class="fa-solid fa-phone"></i> 924 27 78 47 (Teléfono directo)</a>
+      </div>
+      <div class="top-bar-info">
+        <span><i class="fa-solid fa-circle-info"></i> Llama antes de desplazarte para confirmar disponibilidad</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon"><i class="fa-solid fa-wrench"></i></div>
+        <div>
+          TUNDI
+          <span class="brand-sub">Taller Mecánico · Badajoz</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="servicios.html" class="nav-link active">Servicios</a>
+        <a href="nosotros.html" class="nav-link">El Taller</a>
+        <a href="contacto.html" class="nav-link">Contacto y Cita</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="tel:+34924277847" class="btn btn-outline btn-sm">
+          <i class="fa-solid fa-phone"></i> 924 27 78 47
+        </a>
+        <a href="contacto.html" class="btn btn-primary btn-sm">
+          Pedir Cita
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Cabecera de Página -->
+  <section class="page-header">
+    <div class="container">
+      <div class="badge">Especialidades del Sector</div>
+      <h1>Servicios de Taller y Mantenimiento</h1>
+      <p>Reparación y mantenimiento integral para turismos en Badajoz. Si necesitas una intervención concreta, llámanos al <strong>924 27 78 47</strong> para confirmar disponibilidad y presupuesto cerrado.</p>
+    </div>
+  </section>
+
+  <!-- Catálogo Completo de Servicios -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-3">
+        <article class="card" id="mecanica">
+          <div>
+            <div class="card-icon"><i class="fa-solid fa-gears"></i></div>
+            <h3>Mecánica General</h3>
+            <p>Reparación de motor, sustitución de kit de embrague, kits de distribución, correas de servicio y bomba de agua.</p>
+          </div>
+          <a href="contacto.html" class="card-link">Consultar presupuesto <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="card" id="frenos">
+          <div>
+            <div class="card-icon"><i class="fa-solid fa-compact-disc"></i></div>
+            <h3>Frenos y Suspensión</h3>
+            <p>Cambio de pastillas y discos de freno, purgado y sustitución de líquido de frenos, amortiguadores, copelas y rótulas.</p>
+          </div>
+          <a href="contacto.html" class="card-link">Consultar presupuesto <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="card" id="neumaticos">
+          <div>
+            <div class="card-icon"><i class="fa-solid fa-circle-dot"></i></div>
+            <h3>Neumáticos y Alineación</h3>
+            <p>Venta de neumáticos de primeras marcas y equivalentes, montaje, equilibrado de ruedas y alineación de dirección.</p>
+          </div>
+          <a href="contacto.html" class="card-link">Consultar presupuesto <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="card" id="diagnosis">
+          <div>
+            <div class="card-icon"><i class="fa-solid fa-laptop-medical"></i></div>
+            <h3>Diagnosis Electrónica</h3>
+            <p>Lectura de fallos en centralita (ECU), diagnóstico de testigos encendidos en el cuadro y borrado de averías tras reparación.</p>
+          </div>
+          <a href="contacto.html" class="card-link">Consultar presupuesto <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="card" id="climatizacion">
+          <div>
+            <div class="card-icon"><i class="fa-solid fa-snowflake"></i></div>
+            <h3>Aire Acondicionado</h3>
+            <p>Carga de gas refrigerante, detección de fugas en el circuito de climatización, filtros de habitáculo y cambio de compresor.</p>
+          </div>
+          <a href="contacto.html" class="card-link">Consultar presupuesto <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="card" id="mantenimiento">
+          <div>
+            <div class="card-icon"><i class="fa-solid fa-oil-can"></i></div>
+            <h3>Cambio de Aceite y Filtros</h3>
+            <p>Mantenimiento periódico según libro del fabricante (kilometraje o año): aceite, filtro de aceite, aire, combustible y polen.</p>
+          </div>
+          <a href="contacto.html" class="card-link">Consultar presupuesto <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="card" id="preitv">
+          <div>
+            <div class="card-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+            <h3>Revisión Pre-ITV</h3>
+            <p>Inspección preventiva de los puntos clave que revisa la ITV: gases, luces, neumáticos, frenos, limpiaparabrisas y niveles.</p>
+          </div>
+          <a href="contacto.html" class="card-link">Consultar presupuesto <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="card" id="electricidad">
+          <div>
+            <div class="card-icon"><i class="fa-solid fa-car-battery"></i></div>
+            <h3>Electricidad del Automóvil</h3>
+            <p>Comprobación y sustitución de batería, alternador, motor de arranque, fusibles y saneamiento de cableado eléctrico.</p>
+          </div>
+          <a href="contacto.html" class="card-link">Consultar presupuesto <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="card" id="carroceria">
+          <div>
+            <div class="card-icon"><i class="fa-solid fa-car-burst"></i></div>
+            <h3>Chapa, Pintura y Lunas</h3>
+            <p>Consulta disponibilidad telefónica para reparación de golpes, óxido, pulido, parabrisas y lunas laterales.</p>
+          </div>
+          <a href="tel:+34924277847" class="card-link">Llamar: 924 27 78 47 <i class="fa-solid fa-phone"></i></a>
+        </article>
+      </div>
+
+      <div class="disclaimer-box" style="margin-top: 2rem;">
+        <strong>Nota sobre disponibilidad:</strong> Este listado recoge las operaciones habituales de un taller mecánico. Para confirmar si realizamos una intervención específica en tu modelo o consultar plazos, llámanos directamente al <strong>924 27 78 47</strong>.
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabla de Precios Orientativos en España -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Referencia de Mercado 2026</div>
+        <h2>Precios orientativos de taller en España</h2>
+        <p>Te mostramos las horquillas habituales del mercado nacional para turismos (IVA incluido) para que tengas una referencia realista antes de pedir presupuesto.</p>
+      </div>
+
+      <div class="price-table-wrapper">
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Servicio / Intervención</th>
+              <th>Desde (Orientativo)</th>
+              <th>Hasta (Orientativo)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cambio de aceite y filtro</td>
+              <td class="price-tag">60 €</td>
+              <td class="price-tag">120 €</td>
+            </tr>
+            <tr>
+              <td>Pastillas de freno (un eje)</td>
+              <td class="price-tag">80 €</td>
+              <td class="price-tag">180 €</td>
+            </tr>
+            <tr>
+              <td>Discos y pastillas (un eje)</td>
+              <td class="price-tag">180 €</td>
+              <td class="price-tag">350 €</td>
+            </tr>
+            <tr>
+              <td>Batería (montaje incluido)</td>
+              <td class="price-tag">90 €</td>
+              <td class="price-tag">220 €</td>
+            </tr>
+            <tr>
+              <td>Neumático 205/55 R16 montado</td>
+              <td class="price-tag">70 €</td>
+              <td class="price-tag">140 €</td>
+            </tr>
+            <tr>
+              <td>Alineación de dirección</td>
+              <td class="price-tag">40 €</td>
+              <td class="price-tag">70 €</td>
+            </tr>
+            <tr>
+              <td>Recarga de aire acondicionado</td>
+              <td class="price-tag">60 €</td>
+              <td class="price-tag">130 €</td>
+            </tr>
+            <tr>
+              <td>Diagnosis electrónica</td>
+              <td class="price-tag">30 €</td>
+              <td class="price-tag">80 €</td>
+            </tr>
+            <tr>
+              <td>Kit de distribución</td>
+              <td class="price-tag">350 €</td>
+              <td class="price-tag">750 €</td>
+            </tr>
+            <tr>
+              <td>Chapa y pintura (por elemento)</td>
+              <td class="price-tag">150 €</td>
+              <td class="price-tag">400 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="disclaimer-box">
+        <i class="fa-solid fa-circle-info" style="color: var(--accent);"></i> <strong>Importante:</strong> Horquillas orientativas de mercado para turismos en España (2026), IVA incluido. Varían según ciudad, modelo de vehículo y calidad del recambio. <strong>No son tarifas cerradas de TUNDI:</strong> pide siempre tu presupuesto personalizado antes de dejar el coche llamando al <a href="tel:+34924277847" style="color: #fff; text-decoration: underline;">924 27 78 47</a>.
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner">
+        <div>
+          <h2 style="font-size: 1.9rem; margin-bottom: 0.5rem;">¿Necesitas presupuesto cerrado para tu coche?</h2>
+          <p style="color: var(--text-muted);">Indícanos tu matrícula o modelo y te informamos sin compromiso.</p>
+        </div>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="tel:+34924277847" class="btn btn-primary"><i class="fa-solid fa-phone"></i> 924 27 78 47</a>
+          <a href="contacto.html" class="btn btn-outline">Formulario de Presupuesto</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 1rem;">
+            <div class="brand-icon"><i class="fa-solid fa-wrench"></i></div>
+            <div>
+              TUNDI
+              <span class="brand-sub">Taller Mecánico · Badajoz</span>
+            </div>
+          </a>
+          <p style="font-size: 0.92rem; margin-bottom: 1.25rem;">
+            Taller mecánico para automóviles en Badajoz. Atención directa en Hernando de Soto, 3, sin intermediarios.
+          </p>
+        </div>
+
+        <div>
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios y Precios Orientativos</a></li>
+            <li><a href="nosotros.html">El Taller y Garantías</a></li>
+            <li><a href="contacto.html">Contacto y Cita Previa</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Áreas de Taller</h4>
+          <ul class="footer-links">
+            <li><a href="servicios.html#mecanica">Mecánica General</a></li>
+            <li><a href="servicios.html#mantenimiento">Aceite y Filtros</a></li>
+            <li><a href="servicios.html#frenos">Frenos y Suspensión</a></li>
+            <li><a href="servicios.html#diagnosis">Diagnosis Electrónica</a></li>
+            <li><a href="servicios.html#preitv">Revisión Pre-ITV</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contacto Directo</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Hernando de Soto, 3<br>06006 Badajoz, España</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+34924277847">924 27 78 47</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <span>Llama antes de desplazarte para confirmar horario y recepción.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> Talleres TUNDI · Hernando de Soto, 3, Badajoz. Todos los derechos reservados.</p>
+        <p>Talleres Mecánicos para Automóviles en Badajoz</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Flotante WhatsApp -->
+  <a href="https://wa.me/34924277847?text=Hola%20Taller%20TUNDI,%20quisiera%20pedir%20presupuesto%20para%20un%20servicio%20de%20taller." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+    <span class="whatsapp-tooltip">¿Necesitas cita o presupuesto?</span>
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
