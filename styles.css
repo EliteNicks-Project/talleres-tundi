@@ -1,16 +1,13 @@
 /* ==========================================================================
-   TALLERES TUNDI - BADAJOZ | HOJA DE ESTILOS PRINCIPAL
-   Diseño Industrial Moderno & Conversión Local
+   TALLERES TUNDI - BADAJOZ | HOJA DE ESTILOS PRINCIPAL (v3)
    ========================================================================== */
 
 :root {
   --bg-dark: #0e1116;
   --bg-card: #161b22;
   --bg-card-hover: #1f2630;
-  --bg-light: #f4f6f9;
   --text-main: #f3f4f6;
   --text-muted: #9ca3af;
-  --text-dark: #111827;
   --accent: #ff5722;
   --accent-hover: #e64a19;
   --accent-glow: rgba(255, 87, 34, 0.25);
@@ -22,7 +19,6 @@
   --container-width: 1200px;
 }
 
-/* Reset y Base */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -332,7 +328,6 @@ img {
   color: var(--text-muted);
 }
 
-/* Tarjeta rápida en Hero */
 .hero-card {
   background-color: var(--bg-card);
   border: 1px solid var(--border-dark);
@@ -353,7 +348,6 @@ img {
   margin-bottom: 1.25rem;
 }
 
-/* Cabeceras internas */
 .page-header {
   padding: 4rem 0 3.5rem;
   background: 
@@ -737,88 +731,61 @@ textarea {
 }
 
 /* ==========================================================================
-   BOTONES FLOTANTES (INSTAGRAM & WHATSAPP) - BLINDADOS
+   BOTONES FLOTANTES PÍLDORA (INSTAGRAM & WHATSAPP)
    ========================================================================== */
-.floating-social-group {
+.tundi-floating-bar {
   position: fixed !important;
-  bottom: 24px !important;
-  right: 24px !important;
-  z-index: 9999 !important;
+  bottom: 22px !important;
+  right: 22px !important;
+  z-index: 99999 !important;
   display: flex !important;
   flex-direction: column !important;
-  gap: 14px !important;
-  align-items: center !important;
+  gap: 10px !important;
+  align-items: flex-end !important;
 }
 
-.float-btn {
-  position: relative !important;
-  color: #ffffff !important;
-  width: 58px !important;
-  height: 58px !important;
-  min-width: 58px !important;
-  min-height: 58px !important;
-  border-radius: 50% !important;
-  display: flex !important;
+.tundi-pill {
+  display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  font-size: 1.75rem !important;
-  text-decoration: none !important;
-  transition: var(--transition);
-}
-
-.instagram-float {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
-  box-shadow: 0 8px 25px rgba(214, 36, 159, 0.45) !important;
-}
-
-.instagram-float:hover {
-  transform: scale(1.08);
-  box-shadow: 0 10px 28px rgba(214, 36, 159, 0.65) !important;
-}
-
-.whatsapp-float {
-  background-color: #25d366 !important;
-  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45) !important;
-  animation: pulse-wa 2.5s infinite;
-}
-
-.whatsapp-float:hover {
-  background-color: #1ebe5d !important;
-  transform: scale(1.08);
-}
-
-.float-tooltip,
-.whatsapp-tooltip {
-  position: absolute !important;
-  right: 70px !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
-  background-color: #161b22 !important;
+  gap: 10px !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 11px 18px !important;
+  border-radius: 50px !important;
   color: #ffffff !important;
-  padding: 0.45rem 0.85rem !important;
-  border-radius: 6px !important;
-  font-size: 0.82rem !important;
+  text-decoration: none !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 0.9rem !important;
   font-weight: 600 !important;
-  line-height: 1.2 !important;
+  line-height: 1 !important;
   white-space: nowrap !important;
-  border: 1px solid #2a323d !important;
-  opacity: 0 !important;
-  visibility: hidden !important;
-  pointer-events: none !important;
-  transition: var(--transition);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45) !important;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.45) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
 }
 
-.float-btn:hover .float-tooltip,
-.whatsapp-float:hover .whatsapp-tooltip {
-  opacity: 1 !important;
-  visibility: visible !important;
+.tundi-pill i {
+  font-size: 1.3rem !important;
+  line-height: 1 !important;
 }
 
-@keyframes pulse-wa {
-  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
-  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+.tundi-pill-ig {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+}
+
+.tundi-pill-ig:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 10px 26px rgba(220, 39, 67, 0.55) !important;
+}
+
+.tundi-pill-wa {
+  background-color: #25d366 !important;
+}
+
+.tundi-pill-wa:hover {
+  background-color: #1ebe5d !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 10px 26px rgba(37, 211, 102, 0.55) !important;
 }
 
 /* ==========================================================================
@@ -870,16 +837,16 @@ textarea {
   .footer-grid {
     grid-template-columns: 1fr;
   }
-  .floating-social-group {
-    bottom: 18px !important;
-    right: 18px !important;
-    gap: 10px !important;
+  .tundi-floating-bar {
+    bottom: 14px !important;
+    right: 14px !important;
+    gap: 8px !important;
   }
-  .float-btn {
-    width: 52px !important;
-    height: 52px !important;
-    min-width: 52px !important;
-    min-height: 52px !important;
-    font-size: 1.55rem !important;
+  .tundi-pill {
+    padding: 9px 14px !important;
+    font-size: 0.82rem !important;
+  }
+  .tundi-pill i {
+    font-size: 1.15rem !important;
   }
 }
